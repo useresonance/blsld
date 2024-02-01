@@ -1,0 +1,294 @@
+body {
+    font-family: "Dancing Script", cursive;
+    font-size: 24px;
+    color: rgb(172, 182, 255);
+    background-color:	#9a7373;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.header_top{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+    background-color: #FFAD40;
+    border-radius: 25px;
+    margin-top: 25px;   
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.logo img {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+.logo {
+    transition: all .9s;
+}
+
+header {
+    cursor: pointer;
+    transition: all .9s;
+}
+
+header:hover {
+    transform: scale(0.8);
+}
+
+.logo:hover {
+    transform: scale(1.2); 
+    transform: rotate(360deg);
+}
+
+nav{
+    display: flex;
+    gap: 25px;
+}
+nav a{
+    color: aqua;
+    font-size: 18px;
+    transition: all .9s;
+}
+
+nav a:hover {
+    color: pink;
+}
+
+.auth button{
+    display: block;
+    outline: none;
+    border: none;
+    background-color:#090974;
+    color: azure;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+button:hover{
+ color: black;
+ background-color: pink;
+ transition: all .9s;
+}
+
+.info_text{
+    min-height: 100vh;
+    border-radius: 25px;
+    background-image: url(../img/ada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.info_text h1{
+    margin: 10px 20px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(241, 235, 235);
+}
+.info_text p{
+    margin: 10px 20px;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 1000px;
+    color:rgb(241, 235, 235);
+}
+.info_text a {
+padding: 15px;
+text-decoration: none;
+color: rgb(241, 235, 235);
+font-size: 60px;
+
+}
+.flex_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.flex_container div {
+    width: 20%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.flex_perrent {
+    width: 200px;
+    
+}
+.flex_perrent{
+    cursor: pointer;
+    transition: all .9s;
+}
+.flex_perrent:hover{
+    transform: scale(0.8);
+}
+
+.flex_perrent img {
+    width: 100%;
+    height: 200px;
+    padding: 25px;
+}
+ p{
+    margin: 10px 20px;
+    text-align: center;
+    font-size: 20px;
+    color:black;
+    padding-right: 20px;
+}
+h2{
+    margin: 10px 20px;
+    text-align: center;
+    font-size: 30px;
+    padding-left: 20px;
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+h2:hover{
+    color: black;
+    transition: all.9s;
+}
+
+footer {
+    color: #817f7f; 
+    padding: 30px; 
+    text-align: center; 
+}
+footer {
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.textarea1 {
+    width: 95%;
+    height: 175px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    resize: none;
+    padding-top: 17px;
+    padding-left: 20px;
+}
+
+.input {
+    position: relative;
+    width: 85%;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 30px;
+    padding-left: 20px;
+}
+
+.burger-icon,
+    .close-icon {
+       font-size: 40px;
+       cursor: pointer;
+    }
+
+    .burger-icon {
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+
+    .menu {
+        display: none;
+        position: fixed;
+        top: 0px;
+        right: -100%;
+        height: 100%;
+        flex-direction: column;
+        background-color: #f8f8f8;
+        padding: 15px;
+        border: 1px solid #ddd;
+        transition: right 0.3s ease;
+    }
+
+    .nav-item {
+        margin-bottom: 20px;
+        font-size: 18px;
+        display: block;
+        }
+
+        .burger-icon {
+            display: block;
+        }
+        .menu {
+            display: block;  
+        }
+        .close-icon {
+            display: block;
+        }
+
+        .slider-container{
+            width: 10%;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            /* border: 1px solid #ccc; */
+        }
+        
+        .slides{
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .slide{
+            flex: 0 0 100%;
+        }
+        
+        .slide img{
+            width: 100%;
+            height: auto;
+        }
+        
+        .slider-btn{
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: black;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            outline: none;
+            z-index: 2;
+        }
+        
+        .prev-btn{
+            left: 0;
+        }
+        
+        .next-btn{
+            right: 0;
+        }

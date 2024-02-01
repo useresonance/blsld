@@ -1,0 +1,113 @@
+@media screen and (max-width:880px) {
+    nav a {
+        font-size: 12px;
+    }
+    .info_text h1{
+        font-size: 12px;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    body {
+        font-family: "Dancing Script", cursive;
+        font-size: 24px;
+        color: rgb(172, 182, 255);
+        background-color:	#9a7373;
+    }
+    
+    .header_top{
+        padding: 20px 0;
+        align-items: center;
+        background-color: #FFAD40;
+        border-radius: 25px;
+        margin-top: 25px;   
+    }
+    .container{
+        max-width: 480px;
+        margin: 0 auto;
+    }
+    .logo img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        padding-right: 15px;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav a {
+        color: aqua;
+        font-size: 18px;
+    }
+
+  
+    .auth button{
+        width: 100%;
+        background-color:#090974;
+        color: azure;
+        border-radius: 10px;
+        padding: 0px;
+
+
+    }
+    .info_text{
+        min-height: 100vh;
+        border-radius: 25px;
+        background-image: url(../img/ada.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .info_text h1{
+        margin: 10px 20px;
+        text-align: center;
+        font-size: 30px;
+        color: rgb(241, 235, 235);
+    }
+    .info_text p{
+        margin: 10px 20px;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 1000px;
+        color:rgb(241, 235, 235);
+    }
+    .info_text a {
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(241, 235, 235);
+    font-size: 60px;
+    
+    }
+    .flex_container{
+        margin: 0 auto
+    }
+    
+    .flex_container div {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .flex_perrent img {
+        width: 80%;
+        height: 300px;
+        padding: 25px;
+        width: 300px;
+    }
+     p{
+        margin: -20px 20px;
+        text-align: center;
+        font-size: 20px;
+        color:black;
+        padding-right: 20px;
+    }
+    h2{
+        margin: 10px 20px;
+        text-align: center;
+        font-size: 30px;
+        padding-left: 20px;
+        color: aquamarine;
+        text-decoration: underline;
+    }
+
+}
